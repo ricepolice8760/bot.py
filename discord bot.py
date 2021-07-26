@@ -167,5 +167,5 @@ async def on_message(message, discord=None):
     if message.content.startswith(".추가"):
         await message.channel.send("7777019015391 카카오뱅크 이곳으로 100원을 보내주시면 원하는 것을 추가해 드립니다.")
 
-
-client.run("ODQxOTUxNjczMjE5OTQwMzYz.YJuOmQ.vcx-xm-TxTabW4w_GO3I0aoYEA0")
+    access_token = os.environ['BOT_TOKEN']
+    client.run(access_token)
